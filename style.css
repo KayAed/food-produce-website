@@ -70,8 +70,7 @@ i {
     outline: none;
 }
 
-#search-button,
-#drop-down-button {
+.search-bar-btn {
     background-color: #223F40;
     border: none;
     font-size: 16px;
