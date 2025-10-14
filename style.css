@@ -146,6 +146,8 @@ i {
     border-radius: 8px;
     padding: 8px 24px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
 #hero-button {
@@ -199,34 +201,43 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 16px;
 }
 
 .product-box {
+    padding: 16px 0px;
     position: relative;
     display: flex;
     flex-direction: column;
     height: 253px;
     width: 267px;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .product-title-text-button {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     position: absolute;
-    bottom: 16px;
-    left: 16px;
+    bottom: 0;
+    left: 0;
+    padding: 78px 12px 16px 16px;
+    background-color: #00000080;
+    gap: 4px;
 }
 
 .product-title {
     font-size: 36px;
     font-weight: 700;
     color: #EBB732;
+    
 }
 
 .product-text {
     font-size: 18px;
     font-weight: 400;
     color: #fff;
+    padding-bottom: 16px;
+}
+
+.product-info {
+    cursor: pointer;
 }
