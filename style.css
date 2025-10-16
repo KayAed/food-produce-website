@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     margin: 0;
 }
+/*Naviagation*/
 
 .nav-section {
     background-color: #223F40;
@@ -130,6 +131,8 @@ ul {
     margin: 0px;
 }
 
+/*Hero Section*/
+
 .hero-text-content {
     padding: 16px;
     display: flex;
@@ -188,9 +191,12 @@ img {
     align-items: flex-end;
 }
 
-.product-section {
+/*Product Section*/
+
+.product-section,
+.bestseller-section {
     background-color: #fff;
-    padding: 24px 72px;
+    padding: 32px 72px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -205,7 +211,8 @@ img {
     padding: 16px 0px;
 }
 
-.category1n2-header {
+.category1n2-header,
+.bestseller-header {
     font-size: 64px;
     color: #000;
     font-weight: 900;
@@ -287,7 +294,7 @@ img {
 }
 
 .product-name {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .product-name-desc {
@@ -343,4 +350,44 @@ select {
 .size-submit {
     display: block;
     width: 100%;
+}
+
+/*Bestsellers Section*/
+
+.bestseller-section {
+    background-color: #223F40;
+    color: #fff;
+}
+
+.nav-like-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.for-bestseller {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px 0px;
+}
+
+.bestseller-header {
+    color: #fff;
+}
+
+.bestseller-category-list {
+    font-size: 20px;
+    gap: 16px;
+}
+
+#selected {
+    color: #EBB732;
+}
+
+
+.bestseller {
+    background-color: transparent;
 }
