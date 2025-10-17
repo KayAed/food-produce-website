@@ -194,7 +194,8 @@ img {
 /*Product Section*/
 
 .product-section,
-.bestseller-section {
+.bestseller-section,
+.fruits-n-donuts {
     background-color: #fff;
     padding: 32px 72px;
     display: flex;
@@ -390,4 +391,66 @@ select {
 
 .bestseller {
     background-color: transparent;
+}
+
+.of-fruits-n-donuts {
+    margin-bottom: 48px;
+}
+
+.category3 {
+    height: 243px;
+    width: 232px;
+    position: relative;
+}
+
+/* .for-category3 {
+    position: relative;
+} */
+
+.category3-img {
+    margin-top: 24px;
+    position: absolute;
+    top: -65px;
+    right: -15px;
+    /* top: 0;
+    right: 0px; */
+}
+
+.fruits-n-donuts-ndr {
+    gap: 2px;
+    padding-bottom: 0px;
+}
+
+.fruits-n-donuts-price-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px 0px 0px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-second-half {
+    position: absolute;
+    bottom: 20px;
+}
+
+#fnd-card1-bgcolor {
+    background-color: #9A6C72;
+    border: 2px solid #854C54;
+}
+
+#fnd-card2-bgcolor {
+    background-color: #FDC940;
+    border: 2px solid #bb8b11;
+}
+
+#fnd-card3-bgcolor {
+    background-color: #ADB941;
+    border: 2px solid #68711a;
+}
+
+#fnd-card4-bgcolor {
+    background-color: #BE8D4C;
+    border: 2px solid #875a1e;
 }
