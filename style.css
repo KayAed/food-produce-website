@@ -213,7 +213,8 @@ img {
 }
 
 .category1n2-header,
-.bestseller-header {
+.bestseller-header,
+.info-section-title {
     font-size: 64px;
     color: #000;
     font-weight: 900;
@@ -375,7 +376,9 @@ select {
     padding: 16px 0px;
 }
 
-.bestseller-header {
+.bestseller-header,
+.info-section-title,
+.info-section-text {
     color: #fff;
 }
 
@@ -453,4 +456,30 @@ select {
 #fnd-card4-bgcolor {
     background-color: #BE8D4C;
     border: 2px solid #875a1e;
+}
+
+.fnd-btn {
+    border: 1px solid #000;
+}
+
+.info-section {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.half-info-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-section-title-n-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    padding: 58px 280px 220px 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
