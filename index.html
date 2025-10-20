@@ -18,12 +18,12 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#fruits">Fruits</a></li>
-            <li><a href="#Vegetables">Vegetables</a></li>
+            <li><a href="#vegetables">Vegetables</a></li>
         </ul>
         <div class="input">
             <div class="input-left">
                 <button class="search-bar-btn"><span class="material-symbols-outlined fa-magnifying-glass">search</span></button>
-                <input class="search-box" type="search" placeholder="Search Products">
+                <input class="search-box" type="search" placeholder="Search Products" id="search">
             </div>
             <div class="drop-down">
                 All Categories
@@ -40,7 +40,7 @@
     <div class="hero-section">
         <div class="hero-text-content">
             <p id="promo-note">Daily Discount</p>
-            <div class="hero-title">Fruits & Vegetables</div>
+            <div class="hero-title" id="home">Fruits & Vegetables</div>
             <div class="hero-text">These superfoods are packed with vital nutirents, including
                 vitamins and minerals that help you get and stay healthy. Additionally, they are super 
                 enjoyable and easy to make.
@@ -54,7 +54,7 @@
 
     <div class="product-section">
         <div class="category1">
-            <div class="title-and-button">
+            <div class="title-and-button" id="fruits">
                 <div class="category1n2-header">Fruits</div>
                 <button class="btns" id="category1-button">Show More <span class="material-symbols-outlined">chevron_forward</span></button>
             </div>
@@ -149,7 +149,7 @@
         </div>
 
         <div class="category2">
-            <div class="title-and-button">
+            <div class="title-and-button" id="vegetables">
                 <div class="category1n2-header">Vegetables</div>
                 <button class="btns" id="category1-button">Show More <span class="material-symbols-outlined">chevron_forward</span></button>
             </div>
@@ -751,5 +751,54 @@
             </div>
         </div>
     </div>
+
+    <div class="sub-footer-section">
+        <div class="logo-n-about">
+            <div class="logo">
+                <img src="Images/Logo.svg" alt="">
+            </div>
+            <div class="about">
+                Dedicated to quality and freshness, we connect you with food that nourishes.
+                Our mission is to make eating well a lifestyle, not a challenge.
+            </div>
+        </div>
+
+        <div class="navigation">
+            <div class="navigation-title">Navigation</div>
+            <ul class="navigation-links">
+                <li><a href="#search">Search</a></li>
+                <li><a href="">My Cart</a></li>
+                <li><a href="#fruits">Categories</a></li>
+                <li><a href="">Wishlist</a></li>
+            </ul>
+        </div>
+
+        <div class="resources">
+            <div class="resources-title">Resources</div>
+            <ul class="resources-links">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Delivery</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+        </div>
+
+        <div class="subscription-cta">
+            <div class="subscription-cta-title-text">
+                <div class="subscription-cta-title">Subscribe to our Newsletter and get 15% off your first order!</div>
+                <div class="subscription-cta-text">
+                    Stay in the loop with fresh tips, insights and member-only discounts!
+                </div>
+            </div>
+            <div class="email-n-button">
+                <input type="email" class="getemail" placeholder="examplemail@gmail.com">
+                <button type="submit" class="email-submit btn"><span class="material-symbols-outlined">arrow_right_alt</span></button>
+            </div>
+        </div>
+    </div>
+
+    .
 </body>
 </html>
