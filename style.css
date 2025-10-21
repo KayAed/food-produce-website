@@ -1,7 +1,9 @@
-@font-face {
+/* @font-face {
     font-family: "Roboto Slab";
     src: url(Assets/RobotoSlab-VariableFont_wght.ttf);
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body {
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
@@ -38,13 +40,13 @@ ul {
     margin: 0;
 }
 
-/* .icon {
+.pwc {
   font-variation-settings:
   'FILL' 1,
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
-} */
+}
 
 .pwc,
 .search-bar-btn,
@@ -100,6 +102,15 @@ ul {
     color: #fff;
 }
 
+.liked {
+    color: #EBB732;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 .profile-wishlist-cart-nav {
     padding: 8px 0px 8px 8px;
     justify-content: space-between;
@@ -119,6 +130,8 @@ ul {
     justify-content: space-between;
     flex: 1;
     height: 600px;
+    position: relative;
+
 }
 
 #promo-note {
@@ -139,6 +152,7 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 600px;
     gap: 24px;
 }
 
@@ -146,6 +160,8 @@ ul {
     font-size: 96px;
     font-weight: 900;
     color: #fff;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .hero-text {
@@ -184,8 +200,11 @@ img {
 }
 
 .hero-image {
-    /* height: 600px; */
-    width: 1200px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* width: 1200px; */
     display: flex;
     align-items: flex-end;
 }
@@ -267,6 +286,79 @@ img {
     cursor: pointer;
 }
 
+.carousels {
+    width: 100%;
+    overflow-x: auto;
+    margin: 3em auto;
+    flex-wrap: nowrap;
+    gap: 1em;
+    scroll-behavior: smooth;
+    anchor-name: --carousels;
+    scroll-snap-type: x mandatory;
+    /* scroll-marker-group: after; */
+}
+
+/* .carousel::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+.withcarousel::scroll-marker {
+    content: "";
+    height: 1em;
+    width: 1em;
+    background-color: #00000070;
+    border-radius: 50%;
+} */
+
+/* .withcarousel::scroll-marker:target-current {
+    background-color: #EBB732;
+} */
+
+.carousels::-webkit-scrollbar {
+    display: none;
+}
+
+.carousels::scroll-button(right),
+.carousels::scroll-button(left) {
+    content: "→";
+    border: none;
+    font-size: 28px;
+    font-weight: 800;
+    background-color: #EBB732;
+    color: #000;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-bottom: .2em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carousels;
+    position-area: right center;
+    translate: -30%;
+}
+
+.carousels::scroll-button(left) {
+    content: "←";
+    position-area: left center;
+    translate: 30%;
+}
+
+.carousels::scroll-button(right):disabled,
+.carousels::scroll-button(left):disabled {
+    background-color: #D3D3D3 ;
+    color: #808080 ;
+    cursor: auto;
+}
+
+.withcarousel {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 20.43em;
+}
+
 .product-menu-card {
     background-color: #D9D9D9;
     border:2px solid #a1a1a1;
@@ -330,11 +422,13 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
     padding: 8px 12px 16px 0px;
 }
 
 .size {
     width: 40%;
+
 }
 
 select {
@@ -701,4 +795,14 @@ select {
     border: 1px solid #000;
     padding-top: 4px;
     padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #223F40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
 }
